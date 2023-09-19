@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
+  align-items: flex-start;
+  /* padding: 6rem; */
   min-height: 100vh;
+  background-color: white;
 }
 
 .description {
@@ -226,4 +227,34 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+
+.heading
+{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.nameheading
+{
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.paragraphstyle
+{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: black;
+  padding: 3rem;
+}
+
+.usercontainer
+{
+  padding: 3rem;
 }
