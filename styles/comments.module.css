@@ -1,0 +1,28 @@
+.commentcontainer
+{
+    color: black;
+}
+
+.commentcontainer h1
+{
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-top: 0.5rem;
+}
+
+.commentcontainer h2
+{
+    font-weight: 500;
+    margin-top: 0.25rem;
+    font-size: 0.6rem;
+    color: grey;
+}
+
+.comments
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}

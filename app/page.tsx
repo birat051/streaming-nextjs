@@ -1,6 +1,4 @@
 import styles from './page.module.css'
-import LoadingPage from './loading'
-import { Suspense } from 'react'
 import { wait,getAllUsers } from '@/services/getUsers'
 
 interface User {
@@ -31,7 +29,6 @@ interface User {
 export default async function Home() {
   const {data,error}=await getAllUsers()
   return (
-    <Suspense fallback={<LoadingPage />}>
     <main className={styles.main}>
     {data && <div className={styles.usercontainer}>
       <h1 className={styles.heading}>Users</h1>
@@ -43,7 +40,5 @@ export default async function Home() {
       </div>}
       {error && <p className={styles.paragraphstyle}>{error}</p>}
       </main>
-    </Suspense>  
-
   )
 }

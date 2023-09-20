@@ -1,0 +1,26 @@
+.loadingcontainer
+{
+    width: 100%;
+}
+
+
+
+@keyframes skeleton-loading {
+    0%{
+        background-color: hsl(200,20%,70%);
+    }
+    100% 
+    {
+        background-color: hsl(200,20%,95%);
+    }
+}
+
+.loadingbar
+{
+    width: 100%;
+    margin-top: 0.25rem;
+    opacity: 0.7;
+    animation: skeleton-loading 1s linear infinite alternate;
+    height: 20px;
+    border-radius: 2px;
+}
