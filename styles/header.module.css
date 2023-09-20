@@ -1,0 +1,36 @@
+.header
+{
+    padding: 0.5rem 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.1px solid grey;
+}
+
+.navigation
+{
+    margin-left: 1rem;
+}
+
+.navlinks
+{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+    display: flex;
+}
+
+.navlinks li
+{
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.navlinks li:hover
+{
+    color: green;
+    text-decoration: underline;
+}

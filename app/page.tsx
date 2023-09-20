@@ -31,8 +31,8 @@ interface User {
 export default async function Home() {
   const {data,error}=await getAllUsers()
   return (
-  <Suspense fallback={<LoadingPage />}>
-   <main className={styles.main}>
+    <Suspense fallback={<LoadingPage />}>
+    <main className={styles.main}>
     {data && <div className={styles.usercontainer}>
       <h1 className={styles.heading}>Users</h1>
       {data.map((user:User)=>{
@@ -42,7 +42,8 @@ export default async function Home() {
       })}
       </div>}
       {error && <p className={styles.paragraphstyle}>{error}</p>}
-    </main>
-  </Suspense>  
+      </main>
+    </Suspense>  
+
   )
 }
